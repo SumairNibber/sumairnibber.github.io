@@ -1,0 +1,36 @@
+/* styles.css — sleek, minimal, professional */
+:root{
+  --bg:#f7f9fb;
+  --card:#ffffff;
+  --accent:#0b6efd;
+  --muted:#6b7280;
+  --radius:12px;
+  --max-width:1000px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#0f1724;background:var(--bg)}
+.container{max-width:var(--max-width);margin:0 auto;padding:28px}
+.site-header{background:linear-gradient(90deg,#ffffffcc, #f1f5f9cc);backdrop-filter:blur(6px);border-bottom:1px solid #e6edf3}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand h1{font-size:18px;margin:0}
+.subtitle{margin:0;color:var(--muted);font-size:13px}
+.nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+.hero{display:flex;flex-direction:column;gap:20px;padding:28px 0}
+.hero-card{display:flex;gap:20px;align-items:center;background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(12,24,48,0.06)}
+.avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#6b9cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
+.lead{color:var(--muted);margin-top:6px}
+.actions{margin-top:12px}
+.btn{background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;display:inline-block}
+.btn-outline{background:transparent;color:var(--accent);border:1px solid rgba(11,110,253,0.15)}
+.small{padding:6px 10px;font-size:13px}
+.personalize{display:flex;gap:8px;align-items:center;margin-top:12px}
+.personalize input{padding:8px;border-radius:8px;border:1px solid #e6edf3}
+.personalize label{color:var(--muted);font-size:14px}
+section{margin-top:28px}
+h3{margin:0 0 12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(12,24,48,0.04)}
+.site-footer{margin-top:40px;padding:18px 0;border-top:1px solid #e6edf3;background:transparent}
+@media(min-width:900px){.hero{flex-direction:row;align-items:center}
+.hero-card{flex:1}
+.personalize{flex-direction:column;align-items:flex-end}}
